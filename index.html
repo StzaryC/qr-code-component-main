@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    :root {
+      --White: hsl(0, 0%, 100%);
+      --Light_gray: hsl(212, 45%, 89%);
+      --Grayish_blue: hsl(220, 15%, 55%);
+      --Dark_blue: hsl(218, 44%, 22%);
+    }
+
+    body{
+      background: var(--Light_gray);
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      width: 100vw;
+      align-items: center;
+      justify-content: space-around;
+      margin: 0;
+      font-family: 'Outfit';
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .QR_Card{
+      max-width: 370px;
+      height: 570px;
+      padding: 1rem;
+      background: var(--White);
+      border-radius: 1.3rem;
+    }
+
+    .QR_Card img {
+      width: 100%;
+      border-radius: 1rem;
+    }
+
+    .QR_Card h1{
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.8rem;
+      width: 100%;
+    }
+    p {
+      font-size: 18px;
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      font-weight: 400;
+      color: var(--Grayish_blue);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="QR_Card">
+      <img src="images/image-qr-code.png" alt="">
+      <h1> Improve your front-end skills by building projects </h1>
+      <p>Scan the QR code to visit Frontend <br>
+         Mentor and take your coding skills to <br> the next level
+      </p>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Gustavo Park</a>.
+  </div>
+</body>
+</html>
